@@ -1,0 +1,122 @@
+body {
+    font-family: Arial;
+    font-size: 14px;
+    margin: 0;
+    padding: 0;
+}
+
+input, button, textarea, select {
+    font-family: Arial;
+    font-size: 14px;
+}
+
+button {
+    background-color: #e6e6e6;
+}
+
+.header {
+    background-color: #327811;
+    color: #ffffff;
+}
+
+.header a {
+    color: #aaff44;
+    text-decoration: underline;
+}
+.header a:hover {
+    color: #88dd22;
+}
+
+.header__title {
+    text-align: center;
+    font-size: 2em;
+    font-weight: bold;
+    padding: 30px 0 10px 0;
+    margin: 0;
+}
+
+.header__subtitle {
+    text-align: center;
+    font-size: 1.5em;
+    font-weight: bold;
+    padding: 0 0 30px 0;
+    margin: 0;
+}
+
+.header__loginForm,
+.header__loggedUser {
+    position: absolute;
+    right: 0;
+    display: inline-block;
+    text-align: right;
+    padding: 10px 10px 0 0;
+}
+
+.header__loginButton {
+    line-height: 24px;
+    border: 1px solid #dddddd;
+}
+.header__emailField,
+.header__passwordField {
+    width: 100px;
+    height: 20px;
+    line-height: 20px;
+    padding: 2px 4px;
+    margin-right: 7px;
+    border: 1px solid #dddddd;
+}
+
+.header__loggedUser {
+    line-height: 26px;
+}
+.header__loggedUserName,
+.header__logoutLink {
+    display: inline-block;
+    margin-right: 7px;
+}
+
+
+.footer {
+    background-color: #327811;
+    color: #ffffff;
+    padding: 20px 0;
+}
+.footer__copyright {
+    text-align: center;
+}
+
+.content {
+    display: block;
+    max-width: 1140px;
+    margin: 0 auto;
+    padding: 20px 0;
+}
+
+.list__feed {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 15px;
+    min-height: 200px;
+}
+.list__feed.list__loading {
+    opacity: 0.5;
+}
+.list__feedItemImage {
+    width: 100%;
+}
+
+.list__pages {
+    display: block;
+    max-width: 1140px;
+    margin: 0 auto;
+    padding: 20px 0 20px;
+}
+.list__page {
+    display: inline-block;
+    padding: 10px 15px;
+    cursor: pointer;
+}
+.list__page.list__page--isSelected {
+    background-color: #f3f3f3;
+    cursor: default;
+}
